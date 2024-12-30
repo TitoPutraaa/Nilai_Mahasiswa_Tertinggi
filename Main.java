@@ -71,7 +71,7 @@ public class Main {
                     System.out.println("\nMAHASISWA KE-" + (i+1));
                     System.out.println("ID : " + id[i]);
                     System.out.println("Nama : " + nama[i]);
-                    System.out.println("Nilai : " + nilai[i]);
+                    System.out.println("Nilai : " + nilai[i]);             
                 }
             } else {
                 System.out.println("=====DATA KOSONG=====");
@@ -80,8 +80,7 @@ public class Main {
  
         // note membuat algorima untuk memilih nilia tertinggi
         static void nilaiTertinggi(String[] id, String[] nama, int[] nilai){
-            for (int i = 0; i < 1; i++) {
-                int max = i;
+                int max = 0;
                 for (int j = 0; j < nama.length; j++) {
                     if (nilai[max] < nilai[j]) {
                         max = j;
@@ -91,6 +90,5 @@ public class Main {
                 System.out.println("ID : " + id[max]);
                 System.out.println("Nama : " + nama[max]);
                 System.out.println("Nilai  : " + nilai[max]);
-        }
     }
 }
